@@ -5,7 +5,6 @@ import {
   Users,
   GraduationCap,
   Heart,
-  Venus,
 } from "lucide-react";
 
 const cards = [
@@ -36,7 +35,7 @@ const cards = [
     desc: "Formação, trabalho e perspectiva de futuro para a juventude paranaense em diferentes regiões do estado.",
   },
   {
-    icon: Venus,
+    icon: Users,
     title: "Mulheres",
     desc: "Fortalecimento de políticas públicas voltadas à proteção, autonomia, participação e ampliação de oportunidades para as mulheres paranaenses.",
   },
