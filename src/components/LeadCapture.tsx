@@ -22,7 +22,7 @@ const LeadCapture = () => {
           <div className="african-line w-16 mx-auto rounded-full" />
           <h2 className="text-4xl md:text-5xl text-foreground">Faça Parte Dessa Construção</h2>
           <p className="font-body text-muted-foreground text-lg">
-            Junte-se ao movimento. Cadastre-se e participe ativamente do projeto de Eduardo Filho.
+            Junte-se ao movimento. Cadastre-se e participe ativamente do projeto político de Eduardo Filho.
           </p>
 
           {submitted ? (
