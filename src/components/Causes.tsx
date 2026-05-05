@@ -6,6 +6,8 @@ import {
   Church,
   Lightbulb,
   MapPinned,
+  Building2,
+  HeartPulse,
 } from "lucide-react";
 
 const causes = [
@@ -50,6 +52,18 @@ const causes = [
     title: "Povos e Comunidades Tradicionais",
     description:
       "Reconhecimento, proteção e valorização dos povos e comunidades tradicionais, assegurando direitos, visibilidade institucional e políticas públicas voltadas aos seus territórios, culturas e modos de vida.",
+  },
+  {
+    icon: Building2,
+    title: "Terceiro Setor",
+    description:
+      "Fortalecimento das organizações da sociedade civil como parceiras estratégicas na execução de políticas públicas, ampliando a capacidade de atendimento, captação de recursos e impacto social nos territórios.",
+  },
+  {
+    icon: HeartPulse,
+    title: "Saúde",
+    description:
+      "Defesa de políticas públicas voltadas à ampliação do acesso, qualificação do atendimento e fortalecimento da rede de saúde, com atenção à prevenção, ao cuidado humanizado e à eficiência dos serviços prestados à população.",
   },
 ];
 
