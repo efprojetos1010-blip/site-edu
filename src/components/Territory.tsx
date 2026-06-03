@@ -5,6 +5,8 @@ import {
   Users,
   GraduationCap,
   Heart,
+  Globe2,
+  Leaf,
 } from "lucide-react";
 
 const cards = [
@@ -43,6 +45,16 @@ const cards = [
     icon: Heart,
     title: "Diversidade",
     desc: "Respeito, inclusão e participação de todos, com reconhecimento das múltiplas realidades que compõem o Paraná.",
+  },
+  {
+    icon: Globe2,
+    title: "Imigração",
+    desc: "Construção de políticas públicas voltadas ao acolhimento, à dignidade, à integração social e ao acesso a oportunidades para pessoas imigrantes no Paraná.",
+  },
+  {
+    icon: Leaf,
+    title: "Clima",
+    desc: "Defesa de uma política climática sustentável, capaz de preservar a natureza e promover desenvolvimento econômico em equilíbrio com os territórios.",
   },
 ];
 
@@ -84,8 +96,8 @@ const Territory = () => {
           </p>
           <p className="font-body text-lg text-primary-foreground/80 leading-relaxed">
             A proposta é fortalecer o desenvolvimento regional, ampliar oportunidades, valorizar a
-            diversidade, garantir representação social e fazer com que as políticas públicas cheguem
-            onde realmente fazem diferença.
+            diversidade, acolher novas comunidades, garantir representação social e construir
+            políticas públicas que conciliem crescimento, sustentabilidade e preservação da natureza.
           </p>
         </div>
 

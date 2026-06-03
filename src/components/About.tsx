@@ -11,12 +11,12 @@ const About = () => {
           </p>
 
           <p className="font-body text-lg text-muted-foreground leading-relaxed">
-            Com experiência acumulada na articulação com territórios, organizações e órgãos públicos, Eduardo defende uma política baseada em proximidade, escuta e compromisso com as pessoas. Sua proposta é ampliar a representação dos cidadãos, especialmente daqueles que buscam inovação política, inclusão e presença efetiva do poder público, contribuindo para um Paraná plural, eficiente e orientado ao interesse coletivo.
+            Com experiência acumulada na articulação com territórios, organizações e órgãos públicos, Eduardo defende uma política baseada em proximidade, escuta e compromisso com as pessoas. Sua proposta é ampliar a representação dos cidadãos, especialmente daqueles que buscam inovação política, inclusão e presença efetiva do poder público, contribuindo para um Paraná plural, eficiente e orientado ao interesse coletivo.A experiência aqui apresentada parte da trajetória de Eduardo Filho enquanto ator social inserido historicamente em espaços de articulação comunitária, mobilização social e construção de políticas públicas. Sua atuação não se limita à dimensão institucional ou eleitoral, mas atravessa uma trajetória de vida dedicada ao diálogo com diferentes comunidades, lideranças e demandas sociais, especialmente em contextos marcados por desigualdades, vulnerabilidades e ausência de representação. Nesse sentido, a experiência acumulada ao longo de sua caminhada constitui um repertório político e social construído na prática cotidiana, a partir da escuta, da mediação de conflitos, da promoção de iniciativas coletivas e da participação ativa em ações voltadas ao fortalecimento de direitos, cidadania e desenvolvimento social.
           </p>
 
           <div className="grid grid-cols-3 gap-8 pt-8">
             {[
-              { number: "+10", label: "Anos de atuação social" },
+              { number: "+20", label: "Anos de atuação social" },
               { number: "100+", label: "Projetos comunitários" },
               { number: "50K+", label: "Pessoas impactadas" },
             ].map((stat) => (
