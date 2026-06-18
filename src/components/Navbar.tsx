@@ -9,6 +9,7 @@ const links = [
 ];
 
 const voluntariadoLink = "https://forms.gle/w1xWbVtyjeAHLjPj7";
+const doacaoLink = "COLE_AQUI_O_LINK_DA_DOACAO";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -32,14 +33,25 @@ const Navbar = () => {
             </a>
           ))}
 
-          <a
-            href={voluntariadoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-[#0B4A33] px-5 py-2 text-sm font-bold text-white shadow-md border border-[#0B4A33] hover:bg-[#083826] hover:border-[#083826] hover:scale-105 transition-all duration-300"
-          >
-            QUERO SER VOLUNTÁRIO
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={voluntariadoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#0B4A33] px-5 py-2 text-xs lg:text-sm font-bold text-white shadow-md border border-[#0B4A33] hover:bg-[#083826] hover:border-[#083826] hover:scale-105 transition-all duration-300"
+            >
+              QUERO SER VOLUNTÁRIO
+            </a>
+
+            <a
+              href={doacaoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#D9A441] px-5 py-2 text-xs lg:text-sm font-bold text-[#1B1B1B] shadow-md border border-[#D9A441] hover:bg-[#C8922F] hover:border-[#C8922F] hover:scale-105 transition-all duration-300"
+            >
+              FAÇA UMA DOAÇÃO
+            </a>
+          </div>
         </div>
 
         {/* Mobile toggle */}
@@ -74,6 +86,16 @@ const Navbar = () => {
             className="block mx-6 my-4 rounded-full bg-[#0B4A33] px-5 py-3 text-center font-body text-sm font-bold text-white shadow-md border border-[#0B4A33]"
           >
             QUERO SER VOLUNTÁRIO
+          </a>
+
+          <a
+            href={doacaoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="block mx-6 my-4 rounded-full bg-[#D9A441] px-5 py-3 text-center font-body text-sm font-bold text-[#1B1B1B] shadow-md border border-[#D9A441]"
+          >
+            FAÇA UMA DOAÇÃO
           </a>
         </div>
       )}
