@@ -14,14 +14,14 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
         <a href="#" className="font-display text-2xl text-foreground">
           Eduardo <span className="text-gradient-gold">Filho</span>
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
@@ -36,9 +36,9 @@ const Navbar = () => {
             href={voluntariadoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-gradient-gold px-5 py-2 text-sm font-semibold text-background shadow-lg hover:scale-105 transition-all duration-300"
+            className="rounded-full bg-[#0B4A33] px-5 py-2 text-sm font-bold text-white shadow-md border border-[#0B4A33] hover:bg-[#083826] hover:border-[#083826] hover:scale-105 transition-all duration-300"
           >
-            Seja voluntário
+            QUERO SER VOLUNTÁRIO
           </a>
         </div>
 
@@ -71,9 +71,9 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="block mx-6 my-4 rounded-full bg-gradient-gold px-5 py-3 text-center font-body text-sm font-semibold text-background shadow-lg"
+            className="block mx-6 my-4 rounded-full bg-[#0B4A33] px-5 py-3 text-center font-body text-sm font-bold text-white shadow-md border border-[#0B4A33]"
           >
-            Seja voluntário
+            QUERO SER VOLUNTÁRIO
           </a>
         </div>
       )}
