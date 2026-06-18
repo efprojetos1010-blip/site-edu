@@ -8,6 +8,8 @@ const links = [
   { label: "Participe", href: "#participacao" },
 ];
 
+const voluntariadoLink = "https://forms.gle/w1xWbVtyjeAHLjPj7";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -21,14 +23,31 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="font-body text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              key={l.href}
+              href={l.href}
+              className="font-body text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
               {l.label}
             </a>
           ))}
+
+          <a
+            href={voluntariadoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-gradient-gold px-5 py-2 text-sm font-semibold text-background shadow-lg hover:scale-105 transition-all duration-300"
+          >
+            Seja voluntário
+          </a>
         </div>
 
         {/* Mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-foreground" aria-label="Menu">
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-foreground"
+          aria-label="Menu"
+        >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -46,6 +65,16 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+
+          <a
+            href={voluntariadoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="block mx-6 my-4 rounded-full bg-gradient-gold px-5 py-3 text-center font-body text-sm font-semibold text-background shadow-lg"
+          >
+            Seja voluntário
+          </a>
         </div>
       )}
     </nav>
