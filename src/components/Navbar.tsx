@@ -9,7 +9,7 @@ const links = [
 ];
 
 const voluntariadoLink = "https://forms.gle/w1xWbVtyjeAHLjPj7";
-const doacaoLink = "COLE_AQUI_O_LINK_DA_DOACAO";
+const doacaoLink = "https://euapoio.vc/eduardofilho";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
