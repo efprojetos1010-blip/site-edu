@@ -7,7 +7,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display text-2xl text-background">Eduardo Filho</h3>
             <p className="font-body text-sm text-background/60 mt-2">
-              Pré-candidato a Deputado Estadual — Paraná
+              Candidato a Deputado Estadual — Paraná
             </p>
           </div>
           <div className="text-center">
